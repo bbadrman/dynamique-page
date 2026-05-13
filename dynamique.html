@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Badr — Visual Intelligence Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<canvas id="hero-canvas"></canvas>
+
+<nav id="nav">
+  <div class="logo">Badr</div>
+  <ul class="nav-links">
+    <li><a href="#features">Studio</a></li>
+    <li><a href="#demo">Effects</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#showcase">Work</a></li>
+  </ul>
+  <button class="nav-cta">Begin Project</button>
+</nav>
+
+<section id="hero">
+  <div class="hero-label">Visual Intelligence Studio</div>
+  <h1>
+    Where Code
+    <em>Becomes Art</em>
+  </h1>
+  <p class="hero-sub">Generate breathtaking animations with AI, sculpt 3D worlds in Spline, and launch sites so visually rich they feel impossible.</p>
+  <div class="hero-actions">
+    <button class="btn-primary">Start Creating</button>
+    <button class="btn-ghost">View Our Work</button>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+<div class="marquee-strip">
+  <div class="marquee-track" id="marquee-track"></div>
+</div>
+
+<section id="features">
+  <div class="features-header reveal">
+    <span class="section-tag">Core Capabilities</span>
+    <h2>Four pillars of <span>extraordinary</span> digital craft</h2>
+    <p>Every project combines AI-generated creativity with hand-tuned precision to produce something the world hasn't seen before.</p>
+  </div>
+
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <div class="card-number">01</div>
+      <div class="card-icon">
+        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="28" cy="28" r="27" stroke="#c9a84c" stroke-width="0.5"/>
+          <path d="M18 38 Q28 10 38 38" stroke="#c9a84c" stroke-width="1.5" fill="none"/>
+          <circle cx="28" cy="22" r="3" fill="#c9a84c" opacity="0.6"/>
+          <path d="M14 28 Q20 20 28 24 Q36 28 42 20" stroke="rgba(201,168,76,0.4)" stroke-width="1" fill="none"/>
+        </svg>
+      </div>
+      <h3>AI-Generated Animations & Effects</h3>
+      <p>Claude orchestrates particle systems, shader effects, and motion choreography — producing animation concepts that would take weeks to design manually.</p>
+      <div class="card-tags">
+        <span class="tag">Particles</span>
+        <span class="tag">Shaders</span>
+        <span class="tag">Motion</span>
+        <span class="tag">Claude AI</span>
+      </div>
+    </div>
+
+    <div class="feature-card reveal" style="transition-delay:0.1s">
+      <div class="card-number">02</div>
+      <div class="card-icon">
+        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="10" width="36" height="36" stroke="#c9a84c" stroke-width="0.5"/>
+          <path d="M10 28 L28 16 L46 28 L28 40 Z" stroke="#c9a84c" stroke-width="1.2" fill="rgba(201,168,76,0.05)"/>
+          <circle cx="28" cy="28" r="4" fill="#c9a84c" opacity="0.4"/>
+          <path d="M28 16 L28 40 M10 28 L46 28" stroke="rgba(201,168,76,0.2)" stroke-width="0.5" stroke-dasharray="2 4"/>
+        </svg>
+      </div>
+      <h3>3D Scene Building in Spline</h3>
+      <p>Interactive three-dimensional environments, product visualizations, and spatial UI — all built directly in Spline and embedded seamlessly into the live site.</p>
+      <div class="card-tags">
+        <span class="tag">Spline 3D</span>
+        <span class="tag">Physics</span>
+        <span class="tag">Interactive</span>
+        <span class="tag">WebGL</span>
+      </div>
+    </div>
+
+    <div class="feature-card reveal" style="transition-delay:0.2s">
+      <div class="card-number">03</div>
+      <div class="card-icon">
+        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 20 L22 16 L34 20 L44 16" stroke="#c9a84c" stroke-width="1.2" fill="none"/>
+          <path d="M12 20 L12 40 L44 40 L44 16" stroke="#c9a84c" stroke-width="0.5" fill="none"/>
+          <path d="M20 40 L20 28 Q28 18 36 28 L36 40" stroke="#c9a84c" stroke-width="1.2" fill="rgba(201,168,76,0.05)"/>
+          <circle cx="28" cy="28" r="2" fill="#c9a84c" opacity="0.8"/>
+        </svg>
+      </div>
+      <h3>Custom CSS + Three.js Interactions</h3>
+      <p>Hand-crafted animation systems combining CSS custom properties with Three.js geometry. Scroll-driven, cursor-reactive, physics-aware.</p>
+      <div class="card-tags">
+        <span class="tag">Three.js</span>
+        <span class="tag">GSAP</span>
+        <span class="tag">CSS Houdini</span>
+        <span class="tag">Scroll</span>
+      </div>
+    </div>
+
+    <div class="feature-card reveal" style="transition-delay:0.3s">
+      <div class="card-number">04</div>
+      <div class="card-icon">
+        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M28 12 L42 20 L42 36 L28 44 L14 36 L14 20 Z" stroke="#c9a84c" stroke-width="1.2" fill="rgba(201,168,76,0.05)"/>
+          <path d="M28 12 L28 44" stroke="rgba(201,168,76,0.3)" stroke-width="0.5" stroke-dasharray="2 3"/>
+          <path d="M14 20 L42 36 M14 36 L42 20" stroke="rgba(201,168,76,0.15)" stroke-width="0.5"/>
+          <circle cx="28" cy="28" r="5" stroke="#c9a84c" stroke-width="1" fill="rgba(201,168,76,0.1)"/>
+        </svg>
+      </div>
+      <h3>Launch Sites That Look Expensive</h3>
+      <p>Full-stack launch with performance-optimized assets, production CSS architecture, and the kind of visual refinement that turns visitors into believers.</p>
+      <div class="card-tags">
+        <span class="tag">Production</span>
+        <span class="tag">Performance</span>
+        <span class="tag">Vercel</span>
+        <span class="tag">Luxury UX</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="demo">
+  <div class="demo-canvas-wrap reveal">
+    <canvas id="demo-canvas"></canvas>
+    <div class="demo-label">
+      <div class="live-dot"></div>
+      Live Three.js Scene
+    </div>
+  </div>
+  <div class="demo-content reveal" style="transition-delay:0.2s">
+    <span class="section-tag">Interactive Preview</span>
+    <h2>Real-time 3D, <em>rendered in browser</em></h2>
+    <p>Every scene you see is rendered live using WebGL and Three.js — no pre-recorded video. Move your mouse above the canvas to feel the interaction.</p>
+    <p>This is what every page of your site feels like.</p>
+    <div class="stats-row">
+      <div class="stat-item">
+        <span class="stat-num">60fps</span>
+        <span class="stat-label">Render rate</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">∞</span>
+        <span class="stat-label">Possibilities</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">0ms</span>
+        <span class="stat-label">Perceived lag</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="process-header reveal">
+    <span class="section-tag">Our Process</span>
+    <h2>From idea to <em>iconic</em></h2>
+  </div>
+  <div class="process-steps">
+    <div class="step reveal">
+      <div class="step-num">I</div>
+      <h4>AI Ideation</h4>
+      <p>Claude generates dozens of animation directions, color systems, and motion concepts in minutes.</p>
+    </div>
+    <div class="step reveal" style="transition-delay:0.1s">
+      <div class="step-num">II</div>
+      <h4>3D Construction</h4>
+      <p>We sculpt the spatial environment in Spline — interactive, physical, and deeply beautiful.</p>
+    </div>
+    <div class="step reveal" style="transition-delay:0.2s">
+      <div class="step-num">III</div>
+      <h4>Code & Craft</h4>
+      <p>Three.js, custom shaders, and CSS architecture are layered together with obsessive precision.</p>
+    </div>
+    <div class="step reveal" style="transition-delay:0.3s">
+      <div class="step-num">IV</div>
+      <h4>Launch</h4>
+      <p>Production deployment with optimized bundles, edge caching, and zero visual compromise.</p>
+    </div>
+  </div>
+</section>
+
+<section id="showcase">
+  <div class="showcase-card reveal">
+    <canvas class="showcase-canvas" id="sc1"></canvas>
+    <div class="showcase-overlay">
+      <h4>Particle Nebula</h4>
+      <p>10,000 particles forming organic constellations</p>
+    </div>
+  </div>
+  <div class="showcase-card reveal" style="transition-delay:0.15s">
+    <canvas class="showcase-canvas" id="sc2"></canvas>
+    <div class="showcase-overlay">
+      <h4>Geometric Lattice</h4>
+      <p>Reactive wireframe with physics simulation</p>
+    </div>
+  </div>
+  <div class="showcase-card reveal" style="transition-delay:0.3s">
+    <canvas class="showcase-canvas" id="sc3"></canvas>
+    <div class="showcase-overlay">
+      <h4>Fluid Aurora</h4>
+      <p>Shader-driven chromatic light fields</p>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <h2>
+    Ready to build something
+    <em>unforgettable?</em>
+  </h2>
+  <p>Join the studios, founders, and creators who trust Badr to make their digital presence impossible to ignore.</p>
+  <div class="cta-actions">
+    <button class="btn-primary">Start Your Project</button>
+    <button class="btn-ghost">Schedule a Call</button>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Badr</div>
+  <div class="footer-copy">© 2025 Badr Studio — Visual Intelligence</div>
+  <div class="footer-copy">Built with Claude + Three.js + Spline</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
