@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Badr — Visual Intelligence Studio</title>
+<title>Badr — Ingénieur FullStack PHP</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -11,34 +11,33 @@
 
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
-
 <canvas id="hero-canvas"></canvas>
 
 <nav id="nav">
   <div class="logo">Badr</div>
   <ul class="nav-links">
-    <li><a href="#features">Studio</a></li>
-    <li><a href="#demo">Effects</a></li>
-    <li><a href="#process">Process</a></li>
-    <li><a href="#showcase">Work</a></li>
+    <li><a href="#features">Expertise</a></li>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#process">Formations</a></li>
   </ul>
-  <button class="nav-cta">Begin Project</button>
+  <button class="nav-cta" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Contact</button>
 </nav>
 
 <section id="hero">
-  <div class="hero-label">Visual Intelligence Studio</div>
+  <div class="hero-label">Ingénieur FullStack PHP · Rabat, Maroc</div>
   <h1>
-    Where Code
-    <em>Becomes Art</em>
+    Du Code
+    <em>À l'Impact</em>
   </h1>
-  <p class="hero-sub">Generate breathtaking animations with AI, sculpt 3D worlds in Spline, and launch sites so visually rich they feel impossible.</p>
+  <p class="hero-sub">Architecte d'applications métier en Symfony, Laravel & React — je transforme des exigences complexes en systèmes robustes, performants et évolutifs.</p>
   <div class="hero-actions">
-    <button class="btn-primary">Start Creating</button>
-    <button class="btn-ghost">View Our Work</button>
+    <button class="btn-primary" onclick="document.getElementById('projets').scrollIntoView({behavior:'smooth'})">Mes Réalisations</button>
+    <button class="btn-ghost" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Me Contacter</button>
   </div>
   <div class="scroll-hint">
     <div class="scroll-line"></div>
-    Scroll
+    Découvrir
   </div>
 </section>
 
@@ -46,11 +45,42 @@
   <div class="marquee-track" id="marquee-track"></div>
 </div>
 
+<!-- ── PROFIL ── -->
+<section id="profil">
+  <div class="profil-inner">
+    <div class="profil-text reveal">
+      <span class="section-tag">Profil</span>
+      <h2>Ingénieur <span>passionné</span> par l'architecture web</h2>
+      <p>Fort d'une expérience solide sur des projets à fort impact dans le secteur de l'assurance, je conçois des systèmes backend performants et des interfaces modernes. Je maîtrise l'ensemble de la chaîne — de l'architecture à la mise en production.</p>
+      <p>Mes spécialités : API REST sécurisées (JWT), architectures SOLID, intégrations temps réel (Mercure), pipelines CI/CD, RGPD et supervision qualité.</p>
+    </div>
+    <div class="profil-stats reveal" style="transition-delay:0.2s">
+      <div class="stat-block">
+        <span class="stat-num">5<sup>+</sup></span>
+        <span class="stat-label">Années d'exp.</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-num">15<sup>+</sup></span>
+        <span class="stat-label">Sites développés</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-num">6<sup>+</sup></span>
+        <span class="stat-label">Frameworks</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-num">2</span>
+        <span class="stat-label">Entreprises</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EXPERTISE ── -->
 <section id="features">
   <div class="features-header reveal">
-    <span class="section-tag">Core Capabilities</span>
-    <h2>Four pillars of <span>extraordinary</span> digital craft</h2>
-    <p>Every project combines AI-generated creativity with hand-tuned precision to produce something the world hasn't seen before.</p>
+    <span class="section-tag">Domaines d'Expertise</span>
+    <h2>Quatre piliers d'une <span>ingénierie</span> de haut niveau</h2>
+    <p>Une vision complète du cycle de développement — de l'architecture à la livraison en production.</p>
   </div>
 
   <div class="features-grid">
@@ -58,19 +88,23 @@
       <div class="card-number">01</div>
       <div class="card-icon">
         <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="28" cy="28" r="27" stroke="#c9a84c" stroke-width="0.5"/>
-          <path d="M18 38 Q28 10 38 38" stroke="#c9a84c" stroke-width="1.5" fill="none"/>
-          <circle cx="28" cy="22" r="3" fill="#c9a84c" opacity="0.6"/>
-          <path d="M14 28 Q20 20 28 24 Q36 28 42 20" stroke="rgba(201,168,76,0.4)" stroke-width="1" fill="none"/>
+          <rect x="8" y="12" width="40" height="32" rx="1" stroke="#c9a84c" stroke-width="0.8"/>
+          <path d="M16 24 L22 28 L16 32" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M26 32 L34 32" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+          <path d="M8 18 L48 18" stroke="rgba(201,168,76,0.2)" stroke-width="0.5"/>
+          <circle cx="12" cy="15" r="1.5" fill="#c9a84c" opacity="0.5"/>
+          <circle cx="17" cy="15" r="1.5" fill="rgba(201,168,76,0.3)"/>
         </svg>
       </div>
-      <h3>AI-Generated Animations & Effects</h3>
-      <p>Claude orchestrates particle systems, shader effects, and motion choreography — producing animation concepts that would take weeks to design manually.</p>
+      <h3>Architecture Back-End</h3>
+      <p>Conception d'applications métier en Symfony (5.4→7) et Laravel (8→10). API REST sécurisées avec JWT, gestion des rôles, caching Redis, traitements asynchrones et temps réel avec Mercure.</p>
       <div class="card-tags">
-        <span class="tag">Particles</span>
-        <span class="tag">Shaders</span>
-        <span class="tag">Motion</span>
-        <span class="tag">Claude AI</span>
+        <span class="tag">PHP 8</span>
+        <span class="tag">Symfony 7</span>
+        <span class="tag">Laravel 10</span>
+        <span class="tag">API REST</span>
+        <span class="tag">Redis</span>
+        <span class="tag">JWT</span>
       </div>
     </div>
 
@@ -78,19 +112,20 @@
       <div class="card-number">02</div>
       <div class="card-icon">
         <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="10" y="10" width="36" height="36" stroke="#c9a84c" stroke-width="0.5"/>
-          <path d="M10 28 L28 16 L46 28 L28 40 Z" stroke="#c9a84c" stroke-width="1.2" fill="rgba(201,168,76,0.05)"/>
-          <circle cx="28" cy="28" r="4" fill="#c9a84c" opacity="0.4"/>
-          <path d="M28 16 L28 40 M10 28 L46 28" stroke="rgba(201,168,76,0.2)" stroke-width="0.5" stroke-dasharray="2 4"/>
+          <rect x="10" y="16" width="36" height="26" rx="1" stroke="#c9a84c" stroke-width="0.8"/>
+          <path d="M10 40 L6 46 L50 46 L46 40" stroke="#c9a84c" stroke-width="0.8" fill="rgba(201,168,76,0.04)"/>
+          <path d="M20 30 L24 26 L28 30 L32 22" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="32" cy="22" r="2" fill="#c9a84c" opacity="0.6"/>
         </svg>
       </div>
-      <h3>3D Scene Building in Spline</h3>
-      <p>Interactive three-dimensional environments, product visualizations, and spatial UI — all built directly in Spline and embedded seamlessly into the live site.</p>
+      <h3>Interfaces Modernes</h3>
+      <p>Développement d'UIs dynamiques avec React, Symfony UX (Turbo & Stimulus), Tailwind et Webpack Encore. SEO avancé, multilingue, Data Layer et tracking gtag.js.</p>
       <div class="card-tags">
-        <span class="tag">Spline 3D</span>
-        <span class="tag">Physics</span>
-        <span class="tag">Interactive</span>
-        <span class="tag">WebGL</span>
+        <span class="tag">React</span>
+        <span class="tag">Turbo</span>
+        <span class="tag">Stimulus</span>
+        <span class="tag">Tailwind</span>
+        <span class="tag">Webpack</span>
       </div>
     </div>
 
@@ -98,19 +133,20 @@
       <div class="card-number">03</div>
       <div class="card-icon">
         <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 20 L22 16 L34 20 L44 16" stroke="#c9a84c" stroke-width="1.2" fill="none"/>
-          <path d="M12 20 L12 40 L44 40 L44 16" stroke="#c9a84c" stroke-width="0.5" fill="none"/>
-          <path d="M20 40 L20 28 Q28 18 36 28 L36 40" stroke="#c9a84c" stroke-width="1.2" fill="rgba(201,168,76,0.05)"/>
-          <circle cx="28" cy="28" r="2" fill="#c9a84c" opacity="0.8"/>
+          <path d="M28 10 L44 18 L44 34 L28 42 L12 34 L12 18 Z" stroke="#c9a84c" stroke-width="0.8" fill="rgba(201,168,76,0.04)"/>
+          <path d="M28 18 L36 22 L36 30 L28 34 L20 30 L20 22 Z" stroke="#c9a84c" stroke-width="0.8" fill="rgba(201,168,76,0.1)"/>
+          <circle cx="28" cy="26" r="2.5" fill="#c9a84c" opacity="0.5"/>
+          <path d="M28 10 L28 18 M44 18 L36 22 M44 34 L36 30 M28 42 L28 34 M12 34 L20 30 M12 18 L20 22" stroke="rgba(201,168,76,0.2)" stroke-width="0.5"/>
         </svg>
       </div>
-      <h3>Custom CSS + Three.js Interactions</h3>
-      <p>Hand-crafted animation systems combining CSS custom properties with Three.js geometry. Scroll-driven, cursor-reactive, physics-aware.</p>
+      <h3>DevOps & Infrastructure</h3>
+      <p>Environnements Dockerisés iso-production, pipelines CI/CD (GitHub Actions → Azure App Service), configuration Nginx avec sécurité et load balancing. Maîtrise GitLab, Bitbucket et DDEV.</p>
       <div class="card-tags">
-        <span class="tag">Three.js</span>
-        <span class="tag">GSAP</span>
-        <span class="tag">CSS Houdini</span>
-        <span class="tag">Scroll</span>
+        <span class="tag">Docker</span>
+        <span class="tag">GitHub Actions</span>
+        <span class="tag">Azure</span>
+        <span class="tag">Nginx</span>
+        <span class="tag">CI/CD</span>
       </div>
     </div>
 
@@ -118,123 +154,354 @@
       <div class="card-number">04</div>
       <div class="card-icon">
         <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M28 12 L42 20 L42 36 L28 44 L14 36 L14 20 Z" stroke="#c9a84c" stroke-width="1.2" fill="rgba(201,168,76,0.05)"/>
-          <path d="M28 12 L28 44" stroke="rgba(201,168,76,0.3)" stroke-width="0.5" stroke-dasharray="2 3"/>
-          <path d="M14 20 L42 36 M14 36 L42 20" stroke="rgba(201,168,76,0.15)" stroke-width="0.5"/>
-          <circle cx="28" cy="28" r="5" stroke="#c9a84c" stroke-width="1" fill="rgba(201,168,76,0.1)"/>
+          <path d="M20 36 L26 30 L30 34 L38 20" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="28" cy="28" r="18" stroke="#c9a84c" stroke-width="0.5" opacity="0.3"/>
+          <circle cx="28" cy="28" r="12" stroke="#c9a84c" stroke-width="0.5" opacity="0.2"/>
+          <path d="M14 14 L18 18 M42 14 L38 18 M14 42 L18 38 M42 42 L38 38" stroke="rgba(201,168,76,0.25)" stroke-width="0.8" stroke-linecap="round"/>
         </svg>
       </div>
-      <h3>Launch Sites That Look Expensive</h3>
-      <p>Full-stack launch with performance-optimized assets, production CSS architecture, and the kind of visual refinement that turns visitors into believers.</p>
+      <h3>Qualité & Sécurité</h3>
+      <p>Tests automatisés (PHPUnit), supervision qualité (SonarQube, PHP CS), architectures modulaires SOLID, authentification et autorisation avancées, conformité RGPD et documentation Confluence.</p>
       <div class="card-tags">
-        <span class="tag">Production</span>
-        <span class="tag">Performance</span>
-        <span class="tag">Vercel</span>
-        <span class="tag">Luxury UX</span>
+        <span class="tag">PHPUnit</span>
+        <span class="tag">SonarQube</span>
+        <span class="tag">SOLID</span>
+        <span class="tag">RGPD</span>
+        <span class="tag">Confluence</span>
       </div>
     </div>
   </div>
 </section>
 
-<section id="demo">
-  <div class="demo-canvas-wrap reveal">
-    <canvas id="demo-canvas"></canvas>
-    <div class="demo-label">
-      <div class="live-dot"></div>
-      Live Three.js Scene
-    </div>
+<!-- ── COMPÉTENCES ── -->
+<section id="competences">
+  <div class="comp-header reveal">
+    <span class="section-tag">Stack Technique</span>
+    <h2>Compétences <em>techniques</em></h2>
   </div>
-  <div class="demo-content reveal" style="transition-delay:0.2s">
-    <span class="section-tag">Interactive Preview</span>
-    <h2>Real-time 3D, <em>rendered in browser</em></h2>
-    <p>Every scene you see is rendered live using WebGL and Three.js — no pre-recorded video. Move your mouse above the canvas to feel the interaction.</p>
-    <p>This is what every page of your site feels like.</p>
-    <div class="stats-row">
-      <div class="stat-item">
-        <span class="stat-num">60fps</span>
-        <span class="stat-label">Render rate</span>
+  <div class="comp-grid">
+    <div class="comp-cat reveal">
+      <div class="comp-cat-label"><span class="comp-arrow">▸</span>Back-End</div>
+      <div class="comp-tags">
+        <span class="ctag ctag--primary">PHP 5/7/8</span>
+        <span class="ctag ctag--primary">Symfony 5→7</span>
+        <span class="ctag ctag--primary">Laravel 8→10</span>
+        <span class="ctag">Composer</span>
+        <span class="ctag">API REST</span>
+        <span class="ctag">JWT</span>
+        <span class="ctag">Mercure</span>
+        <span class="ctag">Redis</span>
       </div>
-      <div class="stat-item">
-        <span class="stat-num">∞</span>
-        <span class="stat-label">Possibilities</span>
+    </div>
+    <div class="comp-cat reveal" style="transition-delay:0.07s">
+      <div class="comp-cat-label"><span class="comp-arrow">▸</span>Front-End</div>
+      <div class="comp-tags">
+        <span class="ctag ctag--primary">React</span>
+        <span class="ctag ctag--primary">JavaScript</span>
+        <span class="ctag">jQuery</span>
+        <span class="ctag">Bootstrap</span>
+        <span class="ctag">Tailwind</span>
+        <span class="ctag">Webpack Encore</span>
+        <span class="ctag">Turbo</span>
+        <span class="ctag">Stimulus</span>
+        <span class="ctag">AJAX</span>
       </div>
-      <div class="stat-item">
-        <span class="stat-num">0ms</span>
-        <span class="stat-label">Perceived lag</span>
+    </div>
+    <div class="comp-cat reveal" style="transition-delay:0.14s">
+      <div class="comp-cat-label"><span class="comp-arrow">▸</span>DevOps</div>
+      <div class="comp-tags">
+        <span class="ctag ctag--primary">Docker</span>
+        <span class="ctag ctag--primary">GitHub Actions</span>
+        <span class="ctag">Azure</span>
+        <span class="ctag">GitLab</span>
+        <span class="ctag">Bitbucket</span>
+        <span class="ctag">Nginx</span>
+        <span class="ctag">Apache</span>
+        <span class="ctag">DDEV</span>
+        <span class="ctag">Jenkins</span>
+      </div>
+    </div>
+    <div class="comp-cat reveal" style="transition-delay:0.21s">
+      <div class="comp-cat-label"><span class="comp-arrow">▸</span>Bases de données</div>
+      <div class="comp-tags">
+        <span class="ctag ctag--primary">MySQL</span>
+        <span class="ctag ctag--primary">MariaDB</span>
+        <span class="ctag">Oracle</span>
+        <span class="ctag">Doctrine ORM</span>
+        <span class="ctag">DBeaver</span>
+        <span class="ctag">SQL Optimisation</span>
+      </div>
+    </div>
+    <div class="comp-cat reveal" style="transition-delay:0.28s">
+      <div class="comp-cat-label"><span class="comp-arrow">▸</span>Qualité & Tests</div>
+      <div class="comp-tags">
+        <span class="ctag ctag--primary">PHPUnit</span>
+        <span class="ctag">SonarQube</span>
+        <span class="ctag">PHP CodeSniffer</span>
+        <span class="ctag">SOLID</span>
+        <span class="ctag">Agile Scrum</span>
+        <span class="ctag">2TUP</span>
+        <span class="ctag">UML</span>
+      </div>
+    </div>
+    <div class="comp-cat reveal" style="transition-delay:0.35s">
+      <div class="comp-cat-label"><span class="comp-arrow">▸</span>Outils</div>
+      <div class="comp-tags">
+        <span class="ctag ctag--primary">PHPStorm</span>
+        <span class="ctag">VSCode</span>
+        <span class="ctag">Jira</span>
+        <span class="ctag">Confluence</span>
+        <span class="ctag">Trello</span>
+        <span class="ctag">Bash</span>
+        <span class="ctag">Linux/Ubuntu</span>
+        <span class="ctag">Postman</span>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ── PROJETS ── -->
+<section id="projets">
+  <div class="proj-header reveal">
+    <span class="section-tag">Réalisations</span>
+    <h2>Projets <em>sélectionnés</em></h2>
+    <p>Des systèmes réels, déployés en production, à fort impact métier.</p>
+  </div>
+  <div class="proj-grid">
+
+    <div class="proj-card reveal">
+      <div class="proj-card-top">
+        <span class="company-badge company-badge--aksam">AKSAM Assurances</span>
+        <span class="proj-year">2023 → 2025</span>
+      </div>
+      <div class="proj-num">01</div>
+      <h3>CRM Gestion des Prospects</h3>
+      <p>Application web complète de gestion des leads assurance avec tableau de bord temps réel. Migration Symfony 5.4 → 6.4. Intégration Mercure, système de rôles et permissions avancé, génération PDF asynchrone.</p>
+      <div class="proj-tech">
+        <span class="ptag">Symfony 6.4</span>
+        <span class="ptag">Mercure</span>
+        <span class="ptag">JWT</span>
+        <span class="ptag">Redis</span>
+        <span class="ptag">Docker</span>
+        <span class="ptag">MySQL</span>
+      </div>
+    </div>
+
+    <div class="proj-card reveal" style="transition-delay:0.1s">
+      <div class="proj-card-top">
+        <span class="company-badge company-badge--aksam">AKSAM Assurances</span>
+        <span class="proj-year">2024</span>
+      </div>
+      <div class="proj-num">02</div>
+      <h3>Système GED Sécurisé</h3>
+      <p>Gestion électronique documentaire avec intégration Cloudflare R2 pour le stockage sécurisé des documents clients liés aux prospects assurance. Architecture Symfony conforme RGPD.</p>
+      <div class="proj-tech">
+        <span class="ptag">Symfony</span>
+        <span class="ptag">Cloudflare R2</span>
+        <span class="ptag">RGPD</span>
+        <span class="ptag">S3 API</span>
+        <span class="ptag">JWT</span>
+      </div>
+    </div>
+
+    <div class="proj-card reveal" style="transition-delay:0.2s">
+      <div class="proj-card-top">
+        <span class="company-badge company-badge--aksam">AKSAM Assurances</span>
+        <span class="proj-year">2024 → 2025</span>
+      </div>
+      <div class="proj-num">03</div>
+      <h3>Gouvernance Multi-Sites</h3>
+      <p>Outil de gouvernance centralisant le pilotage technique de 15+ plateformes web. Affectation utilisateurs, suivi d'avancement, normalisation et gestion des données métiers à l'échelle.</p>
+      <div class="proj-tech">
+        <span class="ptag">Symfony</span>
+        <span class="ptag">React</span>
+        <span class="ptag">GitHub Actions</span>
+        <span class="ptag">Azure</span>
+        <span class="ptag">Docker</span>
+      </div>
+    </div>
+
+    <div class="proj-card reveal" style="transition-delay:0.0s">
+      <div class="proj-card-top">
+        <span class="company-badge company-badge--aksam">AKSAM Assurances</span>
+        <span class="proj-year">2022 → 2025</span>
+      </div>
+      <div class="proj-num">04</div>
+      <h3>15+ Sites Vitrine Assurance</h3>
+      <p>Développement et maintenance d'un parc de 15+ sites d'assurance. SEO avancé, multilingue, Data Layer, gtag.js, intégrations Ringover et Google Services. Déploiement CI/CD → Azure.</p>
+      <div class="proj-tech">
+        <span class="ptag">Laravel</span>
+        <span class="ptag">Symfony</span>
+        <span class="ptag">SEO</span>
+        <span class="ptag">Tailwind</span>
+        <span class="ptag">CI/CD</span>
+        <span class="ptag">Nginx</span>
+      </div>
+    </div>
+
+    <div class="proj-card reveal" style="transition-delay:0.1s">
+      <div class="proj-card-top">
+        <span class="company-badge company-badge--saripro">SARIPRO Assurances</span>
+        <span class="proj-year">2021 → 2022</span>
+      </div>
+      <div class="proj-num">05</div>
+      <h3>Application de Gestion Commerciale</h3>
+      <p>Application de gestion commerciale avec Symfony 5.4. Gestion des contrats, clients et workflows métier spécifiques au secteur de l'assurance, avec reporting et tableaux de bord.</p>
+      <div class="proj-tech">
+        <span class="ptag">Symfony 5.4</span>
+        <span class="ptag">PHP 8</span>
+        <span class="ptag">MySQL</span>
+        <span class="ptag">Bootstrap</span>
+        <span class="ptag">jQuery</span>
+      </div>
+    </div>
+
+    <div class="proj-card reveal" style="transition-delay:0.2s">
+      <div class="proj-card-top">
+        <span class="company-badge company-badge--saripro">SARIPRO Assurances</span>
+        <span class="proj-year">2021</span>
+      </div>
+      <div class="proj-num">06</div>
+      <h3>Application Gestion Restaurant</h3>
+      <p>Application complète de gestion de restaurant — commandes, tables, menus, caisse et statistiques. Développée en PHP 8.1 / MySQL 8.0 avec interfaces dynamiques via AJAX.</p>
+      <div class="proj-tech">
+        <span class="ptag">PHP 8.1</span>
+        <span class="ptag">MySQL 8.0</span>
+        <span class="ptag">JavaScript</span>
+        <span class="ptag">Bootstrap</span>
+        <span class="ptag">AJAX</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── FORMATIONS & CERTIFICATIONS ── -->
 <section id="process">
-  <div class="process-header reveal">
-    <span class="section-tag">Our Process</span>
-    <h2>From idea to <em>iconic</em></h2>
+  <div class="process-header reveal" style="text-align:left">
+    <span class="section-tag">Parcours</span>
+    <h2>Formations & <em>Certifications</em></h2>
   </div>
-  <div class="process-steps">
-    <div class="step reveal">
-      <div class="step-num">I</div>
-      <h4>AI Ideation</h4>
-      <p>Claude generates dozens of animation directions, color systems, and motion concepts in minutes.</p>
-    </div>
-    <div class="step reveal" style="transition-delay:0.1s">
-      <div class="step-num">II</div>
-      <h4>3D Construction</h4>
-      <p>We sculpt the spatial environment in Spline — interactive, physical, and deeply beautiful.</p>
-    </div>
-    <div class="step reveal" style="transition-delay:0.2s">
-      <div class="step-num">III</div>
-      <h4>Code & Craft</h4>
-      <p>Three.js, custom shaders, and CSS architecture are layered together with obsessive precision.</p>
-    </div>
-    <div class="step reveal" style="transition-delay:0.3s">
-      <div class="step-num">IV</div>
-      <h4>Launch</h4>
-      <p>Production deployment with optimized bundles, edge caching, and zero visual compromise.</p>
-    </div>
-  </div>
-</section>
+  <div class="timeline">
 
-<section id="showcase">
-  <div class="showcase-card reveal">
-    <canvas class="showcase-canvas" id="sc1"></canvas>
-    <div class="showcase-overlay">
-      <h4>Particle Nebula</h4>
-      <p>10,000 particles forming organic constellations</p>
+    <div class="tl-item reveal">
+      <div class="tl-marker">
+        <div class="tl-year">12.2025</div>
+        <div class="tl-dot"></div>
+      </div>
+      <div class="tl-content">
+        <span class="tl-issuer">CodeSignal</span>
+        <h4>Securing your Symfony MVC App</h4>
+      </div>
     </div>
-  </div>
-  <div class="showcase-card reveal" style="transition-delay:0.15s">
-    <canvas class="showcase-canvas" id="sc2"></canvas>
-    <div class="showcase-overlay">
-      <h4>Geometric Lattice</h4>
-      <p>Reactive wireframe with physics simulation</p>
+
+    <div class="tl-item reveal" style="transition-delay:0.06s">
+      <div class="tl-marker">
+        <div class="tl-year">11.2025</div>
+        <div class="tl-dot"></div>
+      </div>
+      <div class="tl-content">
+        <span class="tl-issuer">SymfonyCasts</span>
+        <h4>Charming Development in Symfony</h4>
+      </div>
     </div>
-  </div>
-  <div class="showcase-card reveal" style="transition-delay:0.3s">
-    <canvas class="showcase-canvas" id="sc3"></canvas>
-    <div class="showcase-overlay">
-      <h4>Fluid Aurora</h4>
-      <p>Shader-driven chromatic light fields</p>
+
+    <div class="tl-item tl-major reveal" style="transition-delay:0.12s">
+      <div class="tl-marker">
+        <div class="tl-year">06.2024</div>
+        <div class="tl-dot tl-dot--major"></div>
+      </div>
+      <div class="tl-content">
+        <span class="tl-issuer">SUPMTI Rabat · Diplôme d'État</span>
+        <h4>Ingénieur en Systèmes Informatiques</h4>
+      </div>
     </div>
+
+    <div class="tl-item reveal" style="transition-delay:0.18s">
+      <div class="tl-marker">
+        <div class="tl-year">03.2024</div>
+        <div class="tl-dot"></div>
+      </div>
+      <div class="tl-content">
+        <span class="tl-issuer">CISCO Networking Academy</span>
+        <h4>Introduction to Cybersecurity</h4>
+      </div>
+    </div>
+
+    <div class="tl-item reveal" style="transition-delay:0.24s">
+      <div class="tl-marker">
+        <div class="tl-year">02.2024</div>
+        <div class="tl-dot"></div>
+      </div>
+      <div class="tl-content">
+        <span class="tl-issuer">CISCO Networking Academy</span>
+        <h4>Introduction to Modern AI</h4>
+      </div>
+    </div>
+
+    <div class="tl-item tl-major reveal" style="transition-delay:0.3s">
+      <div class="tl-marker">
+        <div class="tl-year">06.2022</div>
+        <div class="tl-dot tl-dot--major"></div>
+      </div>
+      <div class="tl-content">
+        <span class="tl-issuer">SUPMTI Rabat · Diplôme</span>
+        <h4>Licence Pro en Systèmes d'Information</h4>
+      </div>
+    </div>
+
+    <div class="tl-item reveal" style="transition-delay:0.36s">
+      <div class="tl-marker">
+        <div class="tl-year">04.2022</div>
+        <div class="tl-dot"></div>
+      </div>
+      <div class="tl-content">
+        <span class="tl-issuer">Cisco Corporation</span>
+        <h4>CCNAS — Cisco Network Security</h4>
+      </div>
+    </div>
+
+    <div class="tl-item reveal" style="transition-delay:0.42s">
+      <div class="tl-marker">
+        <div class="tl-year">05.2022</div>
+        <div class="tl-dot"></div>
+      </div>
+      <div class="tl-content">
+        <span class="tl-issuer">Orange Digital Center Rabat</span>
+        <h4>PHP Laravel — Certification</h4>
+      </div>
+    </div>
+
+    <div class="tl-item reveal" style="transition-delay:0.48s">
+      <div class="tl-marker">
+        <div class="tl-year">04.2021</div>
+        <div class="tl-dot"></div>
+      </div>
+      <div class="tl-content">
+        <span class="tl-issuer">Cisco Corporation</span>
+        <h4>CCNA 1 & 2</h4>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <section id="cta">
   <h2>
-    Ready to build something
-    <em>unforgettable?</em>
+    Travaillons
+    <em>ensemble.</em>
   </h2>
-  <p>Join the studios, founders, and creators who trust Badr to make their digital presence impossible to ignore.</p>
+  <p>Vous avez un projet, une mission ou une opportunité ? Je suis disponible pour en discuter.</p>
   <div class="cta-actions">
-    <button class="btn-primary">Start Your Project</button>
-    <button class="btn-ghost">Schedule a Call</button>
+    <a href="mailto:service.informatique@aksam-assurances.fr" class="btn-primary">Envoyer un message</a>
+    <a href="https://www.linkedin.com" class="btn-ghost" target="_blank">LinkedIn</a>
   </div>
 </section>
 
 <footer>
   <div class="footer-logo">Badr</div>
-  <div class="footer-copy">© 2025 Badr Studio — Visual Intelligence</div>
-  <div class="footer-copy">Built with Claude + Three.js + Spline</div>
+  <div class="footer-copy">© 2025 — Ingénieur FullStack PHP</div>
+  <div class="footer-copy">Symfony · Laravel · React · Docker</div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
